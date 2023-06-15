@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1200px;
+  background-color: #d5d4d4;
+  color: #333333;  
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 2%;
+}
+
+h2 {
+  text-transform: uppercase;  
+  margin: 2%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #3a3a3a;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;  
+}
+
+.section {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  background-color: #dacbba;
+  min-width: 300px;
+  height: 100%;
+  margin: 35% 35%;
+  padding: 5%;
+}
+
+.photo {
+  position: absolute;
+  top: -6%;
+  left: 8%;
+  z-index: 1;  
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("/IMG/regi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section_cont {
+  position: absolute;
+  top: 16%;
+  min-width: 270px;
+  font-family: Helvetica;
+}
+
+.section_cont div {
+  width: 270px;
+  border-left: 2px solid #333333;
+  padding-left: 10px;
+  line-height: 1.5em;
+  margin-bottom: 10%;
+}
+
+.main {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  top: 4%;
+  left: 18%;
+  width: 800px;
+  height: 1200px;
+}
+
+.name {
+  position: absolute;
+  left: 2%;
+  /* background-color: cadetblue; */
+  font-family: Helvetica;
+  width: 650px;
+  height: 200px;
+}
+
+.content {
+  position: absolute;
+  top: 17%;
+  /* background-color: chocolate; */
+  font-family: Helvetica;
+  width: 650px;
+  height: 1040px;
+  justify-content: flex-end;
+  line-height: 1.5em;
+}
+
+.content div {
+  border-left: 2px solid #333333;
+  padding-left: 10px;
+  margin-bottom: 5%;
+  text-align: justify;
+}
+
+.content ul{  
+  padding-left: 5%;
+}
+
+.content h3{
+  padding: 2%;
+  font-size: 15px;
+  letter-spacing: normal;
+  line-height: 1.3;
+}
