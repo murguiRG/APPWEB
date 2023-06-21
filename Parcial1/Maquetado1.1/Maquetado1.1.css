@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bodybox{    
+    width: 1000px; 
+    height: auto;   
+    border: solid 20px black;   
+    overflow-x:hidden;
+}
+
+nav{     
+    width: 1000px;              
+    height: 100px;    
+    padding: 0 1.5%;
+    border: 5px solid black;
+    background-color:  rgb(96, 182, 74);    
+}
+
+header{
+    position: relative;     
+    width: 1000px;    
+    height: 300px;
+    padding: 0.2% 1%;
+    border: 5px solid black;
+    background-color: cadetblue;    
+}
+
+main{    
+    position: relative;      
+    width: 1000px;
+    height: 500px;
+    border: 5px solid black;
+    background-color: burlywood;
+    padding: 0.2%;
+}
+
+.aside1{
+    position: absolute;
+    top: 1%;
+    left: 0.5%; 
+    width: 250px;
+    height: 480px;          
+    background-color: white;    
+}
+
+.aside2{
+    position: absolute;  
+    top: 1%;
+    right: 0.5%;  
+    width: 250px;
+    height: 480px;          
+    background-color: white;    
+}
+
+.article{
+    position: relative;      
+    width: 470px;
+    height: 480px;   
+    background-color: white;    
+    margin: auto;
+}
+
+footer{        
+    width: 1000px;
+    height: 50px;
+    background-color: darkorange; 
+    border: solid 5px black;           
+}
+
+.box{
+    position: relative;
+    left: 25px;
+    display: inline-block;    
+    width: 150px;
+    height: 50px;
+    background-color:white;
+    margin: 20px 10px;
+}
+
+#banner{    
+    width: 800px;
+    height: 280px;    
+    background-color: white;    
+}
+
+#flat_container{
+    position: absolute;
+    top: 1.5%;
+    right: 10px;
+    width: 150px;
+    height: 280px;   
+    background-color: cadetblue;     
+}
+
+.flat{            
+    background-color: white;
+    height: 30%;
+    margin: 5% 0;         
+}
