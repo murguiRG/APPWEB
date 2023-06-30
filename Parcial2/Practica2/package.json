@@ -1,0 +1,15 @@
+{
+  "name": "practica2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css sass/custom.css --content Maquetado1.html --output sass/purged.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
