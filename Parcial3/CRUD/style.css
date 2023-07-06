@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    margin: 0 50px;
+    background-color: pink;
+    color: rgb(56, 55, 55);
+  }
+
+  textarea{
+    resize: none;
+  }
+  
+  .container {
+    display: flex;
+    gap: 50px;
+    
+  }
+  
+  #posts {
+    width: 400px; 
+  }
+  
+  #posts div {          
+    display: flex;
+    align-items: center;
+    justify-content: space-between;              
+  }
+
+  #posts div p{        
+    overflow-wrap: break-word;
+    width: fit-content;
+  }
+
+  .options {
+    display: flex;
+    gap: 25px;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  #msg {
+    color: red;
+  }
