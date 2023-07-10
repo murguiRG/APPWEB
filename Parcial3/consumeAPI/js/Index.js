@@ -15,31 +15,37 @@ let buscarPersonaje = () => {
             .then((data) => {
                 
                 //Si el personaje existe en la BD
-                if (data.Response == "True") {
+                if (data.result.length > 0) {
+                    //Borra los datos de la última consulta
+                    resultados.innerHTML = "";
                     
                     //Falta fuente de imagen
-                    resultados.innerHTML = `
-                    <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt=${data.Nombre}> 
-                    <div class="card-body">
-                        <h4 class="card-title">${data.Nombre}</h4>
-                        <h5>Historia</h5>
-                        <p class="card-text">${data.Historia}</p>
-                        <h5>Género:</h5>
-                        <p class="card-text">${data.Genero}</p>
-                        <h5>Estado</h5>
-                        <p class="card-text">${data.Estado}</p>
-                        <h5>Ocupación</h5>
-                        <p class="card-text">${data.Ocupacion}</p>                        
-                    </div>
-                    </div>
-                    `                   
+                    data.result.forEach((personaje) => {
+                        
+                        resultados.innerHTML = `
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt=${personaje.Nombre}> 
+                            <div class="card-body">
+                                <h4 class="card-title">${personaje.Nombre}</h4>
+                                <h5>Historia</h5>
+                                <p class="card-text">${personaje.Historia}</p>
+                                <h5>Género:</h5>
+                                <p class="card-text">${personaje.Genero}</p>
+                                <h5>Estado</h5>
+                                <p class="card-text">${personaje.Estado}</p>
+                                <h5>Ocupación</h5>
+                                <p class="card-text">${personaje.Ocupacion}</p>                        
+                            </div>
+                        </div>
+                        ` 
+                    });
+                    
                 }//El personaje no existe en la BD
                 else {
                     resultados.innerHTML = `<h3>${data.Error}</h3>`
                 }
             })
-        //Para indicar que hubo un error desconocido
+            //Para indicar que hubo un error desconocido
             .catch(() => {
             resultados.innerHTML = `<h3>Ocurrió un error</h3>`
         })
