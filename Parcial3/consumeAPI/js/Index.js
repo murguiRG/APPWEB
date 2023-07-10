@@ -1,4 +1,4 @@
-let nombrePersonajeRef = document.getElementById("barra_busqueda");
+let nombrePersonajeRef = document.getElementById("barra_busqueda").value;
 let buscar = document.getElementById("buscar");
 let resultados = document.getElementById("resultados");
 

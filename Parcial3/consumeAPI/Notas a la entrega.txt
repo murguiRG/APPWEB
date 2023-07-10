@@ -1,0 +1,2 @@
+
+No logro identificar por qué no recibo los datos datos en la llamada a la API, si a caso declaré mal mis varibles o qué. Con el mismo link funcionan perfectamente las llamadas en mi ThunderClient y puedo hacer diferentes consultas. :(
