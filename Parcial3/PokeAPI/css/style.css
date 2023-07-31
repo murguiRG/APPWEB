@@ -1,0 +1,103 @@
+.mipokemon
+{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+    width: 18rem;
+    height: 32.5rem;
+    background-image: url(../img/pokedex.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+.mipokemon img{    
+    width: 12rem;
+    height: auto;
+    background-size: fill;    
+    margin-top: 160px;        
+}
+nav
+{
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 84%, 57%);
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+#enlaces
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;    
+}
+.img-enlaces
+{
+    width: 4rem;
+    height: auto;
+}
+#buscador
+{
+    padding-right: 1rem;
+    gap: 5px;
+}
+#poke-name{
+    border-radius: 5px;
+    border: 1px solid #79b1b1;
+}
+h4{      
+    display: flex;
+    width: 10rem;
+    height: 2rem;  
+    justify-content: space-around;        
+    top: 20rem;
+    z-index: 999;    
+}
+.card-body{    
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 17rem;
+    height: 6rem;
+}
+.card-body p{       
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.miboton{ 
+    justify-self: center;      
+    background-color: #f1f389;
+    pointer-events:initial;
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+}
+.miboton:hover
+{
+background-color: rgb(238, 241, 53);
+}
+#search{
+    background-color: #f1f389;    
+    width: 80px;
+    height: 30px;
+    padding: 0;
+}
+.modal-content{
+    width: 100%;    
+}
+.bug, .dark, .dragon, .electric, .fairy, .fire, .fighting, .flying, .ghost, .grass,
+.ground, .ice, .normal, .poison, .psychic, .rock, .steel, .water{    
+    width: 50%;    
+    border-radius: 5px;   
+    border: none;     
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #79b1b1;  
+    margin-right: 10px;       
+}
